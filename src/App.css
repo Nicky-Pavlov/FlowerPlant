@@ -20,11 +20,33 @@
 .nav__logo {
   display: inline-flex;
   align-items: center;
+  gap: 0.55rem;
+  min-height: 40px;
+  padding: 0;
 }
 
+.nav .nav__logo {
+  gap: 0.55rem;
+  padding: 0;
+}
+
+
+
 .nav__logo img {
+  display: block;
   width: 40px;
   height: 40px;
+}
+
+.nav__brand {
+  color: #ffffff;
+  font-family: 'Borel', cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 1;
+  display: block;
+  transform: translateY(13px);
 }
 
 .nav__links {
@@ -97,6 +119,60 @@ main {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.plant-card {
+  border: 5px solid #156f3f;
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 350px;
+  margin: 1rem auto;
+  text-align: left;
+}
+
+.plant-card__title {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.carousel {
+  margin-top: 2.5rem;
+}
+
+.intro,
+.carousel-header {
+  text-align: left;
+}
+
+.intro {
+  margin-top: 2.5rem;
+  line-height: 1.5rem;
+}
+
+.carousel-header {
+  margin-top: 2.5rem;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.25rem 0.5rem 0.75rem;
+  scroll-snap-type: x mandatory;
+  cursor: grab;
+}
+
+.carousel-track.is-dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+.carousel-track .plant-card {
+  flex: 0 0 350px;
+  max-width: 350px;
+  margin: 0;
+  scroll-snap-align: start;
 }
 
 footer {

@@ -6,6 +6,7 @@ export default function Header() {
     <header className="nav">
       <Link to="/" className="nav__logo" aria-label="Go to home">
         <img src={icon} alt="Flower Plant icon" />
+        <span className="nav__brand">FlowerPlant</span>
       </Link>
 
       <nav className="nav__links" aria-label="Main navigation">
