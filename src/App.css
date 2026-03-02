@@ -179,6 +179,13 @@ main {
   text-align: left;
 }
 
+.my-plants h2,
+.about-us h2 {
+  font-family: 'Borel', cursive;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
 .my-plants__create-button {
   background-color: #156f3f;
   color: #ffffff;
@@ -299,6 +306,52 @@ main {
   display: grid;
   gap: 0.5rem;
   justify-items: start;
+}
+
+.about-us {
+  text-align: left;
+}
+
+.about-us__intro {
+  max-width: 760px;
+  line-height: 1.6;
+}
+
+.about-us__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.about-us__card {
+  border: 2px solid #156f3f;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.about-us__card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-us__card h3,
+.about-us__card p {
+  margin: 0;
+  padding-inline: 1rem;
+}
+
+.about-us__card h3 {
+  padding-top: 0.9rem;
+  padding-bottom: 0.45rem;
+}
+
+.about-us__card p {
+  padding-bottom: 1rem;
+  line-height: 1.5;
 }
 
 footer {
