@@ -24,7 +24,12 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+]
+, 
+{
+  basename: "/flowerplant"
+} 
+);
 
 export default function App() {
   return <RouterProvider router={router} />;
