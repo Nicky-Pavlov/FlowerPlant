@@ -24,12 +24,10 @@ const router = createBrowserRouter([
       },
     ],
   },
-]
-, 
+],
 {
-  basename: "/FlowerPlant"
-} 
-);
+  basename: '/FlowerPlant',
+});
 
 export default function App() {
   return <RouterProvider router={router} />;
